@@ -68,4 +68,9 @@ out = self.relu2(self.bn2(self.attention(self.conv1(out if self.equalInOut else 
 
 <img src="./img/coco.png" width="700" height="202" />
 
+### Heatmap
 
+<img src="./img/heatmap.png" width="733" height="413" />
+
+We visualize the feature map of res5b branch2a after ReLU. Second row is the original ResNet50 results.
+Third row illustrates the results with CGD. CGD deactivates neurons corresponding to backgrounds, which reduces the background noise and helps CNN focus more on objects
