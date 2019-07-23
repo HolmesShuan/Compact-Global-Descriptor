@@ -10,7 +10,9 @@ and
 ![equation](http://latex.codecogs.com/gif.latex?g) 
 correspond to the global average pooling which maps features across spatial dimensions into a response vector.
 
-### Formulation:
+<img src="./img/CGD2.png" width="600" height="250" />
+
+### Final scheme :
 ![equation](http://latex.codecogs.com/gif.latex?\psi(X)&=\text{Tanh}(\text{Softmax}(\text{pool}_{ave}(X))\text{pool}_{ave}(X)^Tw))
 
 ![equation](http://latex.codecogs.com/gif.latex?\phi(X)&=\text{Tanh}(\text{Softmax}(\text{pool}_{ave}(X))\text{pool}_{max}(X)^Tw'))
