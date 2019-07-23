@@ -8,7 +8,7 @@ CGD is a simple yet effective way to capture the correlations between each posit
 ![equation](http://latex.codecogs.com/gif.latex?f) 
 and 
 ![equation](http://latex.codecogs.com/gif.latex?g) 
-correspond to the global avg/max pooling which map features across spatial dimensions into a response vector.
+correspond to the global avg pooling which map features across spatial dimensions into a response vector.
 
 ### Formulation:
 ![equation](http://latex.codecogs.com/gif.latex?\psi(X)&=\text{Tanh}(\text{Softmax}(\text{pool}_{ave}(X))\text{pool}_{ave}(X)^Tw))
