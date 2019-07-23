@@ -1,14 +1,14 @@
 # Compact-Global-Descriptor
 The Pytorch implementation of "[Compact Global Descriptor (CGD) for Neural Networks](https://github.com/HolmesShuan/Compact-Global-Descriptor/blob/master/img/egpaper_for_review.pdf)" (CGD). [PDF](https://github.com/HolmesShuan/Compact-Global-Descriptor/blob/master/img/egpaper_for_review.pdf)
 
-### Toy llustration:
+### Toy illustration:
 <img src="./img/CGD.png" width="640" height="262" />
 CGD is a simple yet effective way to capture the correlations between each position and all positions across channels. 
 
 ![equation](http://latex.codecogs.com/gif.latex?f) 
 and 
 ![equation](http://latex.codecogs.com/gif.latex?g) 
-correspond to the global avg pooling which map features across spatial dimensions into a response vector.
+correspond to the global average pooling which maps features across spatial dimensions into a response vector.
 
 ### Formulation:
 ![equation](http://latex.codecogs.com/gif.latex?\psi(X)&=\text{Tanh}(\text{Softmax}(\text{pool}_{ave}(X))\text{pool}_{ave}(X)^Tw))
