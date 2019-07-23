@@ -27,7 +27,7 @@ See [attention_best.py](https://github.com/HolmesShuan/Compact-Global-Descriptor
 
 ### How to use ?
 Add an attention layer (CGD) right after the first convolution layer in each block. Set the weight decay of CGD to [4e-5](https://github.com/HolmesShuan/Compact-Global-Descriptor/blob/cb19677522c1c3f3105cac6229ecdc6d432ffb11/classification/imagenet.py#L223).
-#### init :
+#### Init :
 ```python
 # __init__(self, in_channels, out_channels, bias=True, nonlinear=True):
 self.attention = AttentionLayer(planes, planes, True, True)
