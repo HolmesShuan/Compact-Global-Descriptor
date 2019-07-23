@@ -70,7 +70,7 @@ out = self.relu2(self.bn2(self.attention(self.conv1(out if self.equalInOut else 
 
 <img src="./img/coco.png" width="700" height="202" />
 
-### Heatmap :
+### Saliency Map:
 
 <img src="./img/heatmap.png" width="733" height="413" />
 
