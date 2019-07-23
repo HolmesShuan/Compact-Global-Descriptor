@@ -53,5 +53,6 @@ def _dist_train(model, dataset, cfg, validate=False):
   # ...
 ```
 * Add `mobilenet.py` to `mmdetection/mmdet/models/backbones/`
+* Add `attention_best.py` to `mmdetection/mmdet/models/backbones/`
 * Add `mobilenet_ssd300_voc.py` to `mmdetection/configs/pascal_voc/`
 * Add `mobilenet_ssd300_coco.py` to `mmdetection/configs/`
