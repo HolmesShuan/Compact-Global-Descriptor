@@ -12,7 +12,11 @@ correspond to the global average pooling which maps features across spatial dime
 
 <img src="./img/CGD2.png" width="600" height="250" />
 
+![equation](http://latex.codecogs.com/gif.latex?\text{CGD}(X)&=X(1+\text{Tanh}(\text{pool}_{ave}(X)\text{pool}_{ave}(X)^Tw))) 
+
 ### Final scheme :
+The cascaded scheme utlizes both max pooling and ave pooling:
+
 ![equation](http://latex.codecogs.com/gif.latex?\psi(X)&=\text{Tanh}(\text{Softmax}(\text{pool}_{ave}(X))\text{pool}_{ave}(X)^Tw))
 
 ![equation](http://latex.codecogs.com/gif.latex?\phi(X)&=\text{Tanh}(\text{Softmax}(\text{pool}_{ave}(X))\text{pool}_{max}(X)^Tw'))
