@@ -5,7 +5,7 @@ import torch.nn as nn
 from torch.utils.data import sampler
 import math
 import torch.nn.functional as F
-
+'''
 class AttentionLayer(nn.Module):
     def __init__(self, in_channels, out_channels, bias=True, nonlinear=True):
         super(AttentionLayer, self).__init__()
@@ -44,7 +44,6 @@ class AttentionLayer(nn.Module):
         y2_s = torch.tanh(y2*y0_s + self.bias2).view(b, c, 1, 1)
 
         z = x*(y2_s+1)
- 
         return z
 '''
 class SqueezeLayer(nn.Module):
@@ -112,4 +111,3 @@ class AttentionLayer(nn.Module):
         att2 = self.squeeze2(y2)
         z = x*(att2+1)
         return z
-'''
