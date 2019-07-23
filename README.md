@@ -1,7 +1,7 @@
 # Compact-Global-Descriptor
 The Pytorch implementation of "[Compact Global Descriptor (CGD) for Neural Networks](https://github.com/HolmesShuan/Compact-Global-Descriptor/blob/master/img/egpaper_for_review.pdf)" (CGD). [PDF](https://github.com/HolmesShuan/Compact-Global-Descriptor/blob/master/img/egpaper_for_review.pdf)
 
-### Toy illustration:
+### Toy illustration :
 <img src="./img/CGD.png" width="640" height="300" />
 CGD is a simple yet effective way to capture the correlations between each position and all positions across channels. 
 
@@ -21,9 +21,9 @@ correspond to the global average pooling which maps features across spatial dime
 
 See [attention_best.py](https://github.com/HolmesShuan/Compact-Global-Descriptor/blob/master/attention_best.py) for detail.
 
-### How to use?
+### How to use ?
 Add an attention layer (CGD) right after the first convolution layer in each block. Set the weight decay of CGD to [4e-5](https://github.com/HolmesShuan/Compact-Global-Descriptor/blob/cb19677522c1c3f3105cac6229ecdc6d432ffb11/classification/imagenet.py#L223).
-#### init:
+#### init :
 ```python
 # __init__(self, in_channels, out_channels, bias=True, nonlinear=True):
 self.attention = AttentionLayer(planes, planes, True, True)
@@ -62,7 +62,7 @@ else:
 out = self.relu2(self.bn2(self.attention(self.conv1(out if self.equalInOut else x))))
 ```
 
-### Results:
+### Results :
 #### ImageNet Acc
 <img src="./img/imagenet.png" width="700" height="244" />
 
@@ -70,7 +70,7 @@ out = self.relu2(self.bn2(self.attention(self.conv1(out if self.equalInOut else 
 
 <img src="./img/coco.png" width="700" height="202" />
 
-### Heatmap
+### Heatmap :
 
 <img src="./img/heatmap.png" width="733" height="413" />
 
