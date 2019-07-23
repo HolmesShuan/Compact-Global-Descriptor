@@ -20,7 +20,7 @@ correspond to the global average pooling which maps features across spatial dime
 See [attention_best.py](https://github.com/HolmesShuan/Compact-Global-Descriptor/blob/master/attention_best.py).
 
 ### How to use?
-Add an attention layer (CGD) right after the first convolution layer in each block. Set the weight decay of CGD to 4e-5.
+Add an attention layer (CGD) right after the first convolution layer in each block. Set the weight decay of CGD to [4e-5](https://github.com/HolmesShuan/Compact-Global-Descriptor/blob/cb19677522c1c3f3105cac6229ecdc6d432ffb11/classification/imagenet.py#L223).
 #### init:
 ```python
 # __init__(self, in_channels, out_channels, bias=True, nonlinear=True):
