@@ -223,7 +223,7 @@ def main_worker(gpu, ngpus_per_node, args):
     for key, value in param_dict.items():
         if 'w0' in key or 'w1' in key or 'w2' in key or 'bias0' in key or 'bias1' in key or 'bias2' in key or \
             'att_' in key:
-            params += [{'params':[value], 'weight_decay': 0.00005}]
+            params += [{'params':[value], 'weight_decay': 0.00004}]
             print(key)
         else:
             params += [{'params':[value], 'weight_decay': args.weight_decay}]
