@@ -1,0 +1,1 @@
+python imagenet.py -a resnet50 --data /data/ilsvrc12_torch/ --epochs 101 --schedule 31 61 81 --gamma 0.1 -c checkpoints/imagenet/resnet50 --gpu-id 0,1,2,3,4,5,6,7 --dist-url 'tcp://127.0.0.1:1234' --dist-backend 'nccl' --multiprocessing-distributed --world-size 1 --rank 0 -j16
