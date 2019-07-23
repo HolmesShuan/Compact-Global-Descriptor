@@ -2,9 +2,9 @@
 The Pytorch implementation of "Compact Global Descriptor (CGD) for Neural Networks" (CGD). [PDF]()
 
 ### Toy Illustration
-<img src="./img/CGD2.png" width="700" height="240" />
+<img src="./img/CGD2.png" width="640" height="262" />
 
-<img src="./img/CGD.png" width="700" height="240" />
+<img src="./img/CGD.png" width="640" height="300" />
 CGD is a simple yet effective way to capture the correlations between each position and all positions across channels.
 
 ### Formulation
