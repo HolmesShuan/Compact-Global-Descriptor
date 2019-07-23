@@ -56,3 +56,4 @@ def _dist_train(model, dataset, cfg, validate=False):
 * Add `attention_best.py` to `mmdetection/mmdet/models/backbones/`
 * Add `mobilenet_ssd300_voc.py` to `mmdetection/configs/pascal_voc/`
 * Add `mobilenet_ssd300_coco.py` to `mmdetection/configs/`
+* Then, please refer to the [Installation and Get started](https://github.com/open-mmlab/mmdetection) in mmdet.
