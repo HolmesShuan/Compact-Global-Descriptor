@@ -1,18 +1,18 @@
 # Compact-Global-Descriptor
 The Pytorch implementation of "Compact Global Descriptor (CGD) for Neural Networks" (CGD). [PDF]()
 
-### Toy llustration
+### Toy llustration:
 <img src="./img/CGD2.png" width="640" height="262" />
 
 <img src="./img/CGD.png" width="640" height="300" />
 CGD is a simple yet effective way to capture the correlations between each position and all positions across channels.
 
-### Formulation
+### Formulation:
 
 
 ### How to use?
 Add an attention layer (CGD) right after the first convolution layer in each block. Set the weight decay of CGD to 4e-5.
-#### init
+#### init:
 ```python
 # __init__(self, in_channels, out_channels, bias=True, nonlinear=True):
 self.attention = AttentionLayer(planes, planes, True, True)
@@ -49,8 +49,12 @@ else:
 out = self.relu2(self.bn2(self.attention(self.conv1(out if self.equalInOut else x))))
 ```
 
-#### Results
+### Results:
+#### ImageNet Acc
 <img src="./img/imagenet.png" width="700" height="244" />
-ImageNet
+
+#### COCO mAP
+
 <img src="./img/coco.png" width="700" height="202" />
-COCO
+
+
