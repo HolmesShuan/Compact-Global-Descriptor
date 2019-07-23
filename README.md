@@ -17,7 +17,7 @@ correspond to the global average pooling which maps features across spatial dime
 
 ![equation](http://latex.codecogs.com/gif.latex?\text{CGD}(X)&=X(1+\text{Tanh}(\psi(X)\phi(X)^Tw''))) 
 
-See [attention_best.py](https://github.com/HolmesShuan/Compact-Global-Descriptor/blob/master/attention_best.py).
+See [attention_best.py](https://github.com/HolmesShuan/Compact-Global-Descriptor/blob/master/attention_best.py) for detail.
 
 ### How to use?
 Add an attention layer (CGD) right after the first convolution layer in each block. Set the weight decay of CGD to [4e-5](https://github.com/HolmesShuan/Compact-Global-Descriptor/blob/cb19677522c1c3f3105cac6229ecdc6d432ffb11/classification/imagenet.py#L223).
