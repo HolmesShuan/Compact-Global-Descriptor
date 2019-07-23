@@ -1,14 +1,18 @@
 # Compact-Global-Descriptor
-The Pytorch implementation of "[Compact Global Descriptor (CGD) for Neural Networks](./img/egpaper_for_reviewer.pdf)" (CGD). [PDF]()
+The Pytorch implementation of "[Compact Global Descriptor (CGD) for Neural Networks](https://github.com/HolmesShuan/Compact-Global-Descriptor/blob/master/img/egpaper_for_review.pdf)" (CGD). [PDF](https://github.com/HolmesShuan/Compact-Global-Descriptor/blob/master/img/egpaper_for_review.pdf)
 
 ### Toy llustration:
 <img src="./img/CGD2.png" width="640" height="262" />
-
-<img src="./img/CGD.png" width="640" height="300" />
 CGD is a simple yet effective way to capture the correlations between each position and all positions across channels.
 
 ### Formulation:
+![equation](http://latex.codecogs.com/gif.latex?\psi(X)&=\text{Tanh}(\text{Softmax}(\text{pool}_{ave}(X))\text{pool}_{ave}(X)^Tw))
 
+![equation](http://latex.codecogs.com/gif.latex?\phi(X)&=\text{Tanh}(\text{Softmax}(\text{pool}_{ave}(X))\text{pool}_{max}(X)^Tw'))
+
+![equation](http://latex.codecogs.com/gif.latex?\text{CGD}(X)&=X(1+\text{Tanh}(\psi(X)\phi(X)^Tw''))) 
+
+See [attention_best.py](https://github.com/HolmesShuan/Compact-Global-Descriptor/blob/master/attention_best.py).
 
 ### How to use?
 Add an attention layer (CGD) right after the first convolution layer in each block. Set the weight decay of CGD to 4e-5.
@@ -31,7 +35,9 @@ residual = x
 out = self.bn1(x)
 out = self.relu(out)
 out = self.conv1(out)
+
 out = self.attention(out)
+
 out = self.bn2(out)
 out = self.relu(out)
 out = self.conv2(out)
