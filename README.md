@@ -1,5 +1,5 @@
 # Compact-Global-Descriptor
-The Pytorch implementation of "[Compact Global Descriptor (CGD) for Neural Networks](https://github.com/HolmesShuan/Compact-Global-Descriptor/blob/master/img/egpaper_for_review.pdf)" (CGD). [PDF](https://github.com/HolmesShuan/Compact-Global-Descriptor/blob/master/img/egpaper_for_review.pdf)
+The Pytorch implementation of "[Compact Global Descriptor for Neural Networks](https://github.com/HolmesShuan/Compact-Global-Descriptor/blob/master/img/egpaper_for_review.pdf)" (CGD). [arXiv](https://arxiv.org/abs/1907.09665v1)
 
 ### Toy illustration :
 <img src="./img/CGD.png" width="640" height="300" />
@@ -80,3 +80,20 @@ out = self.relu2(self.bn2(self.attention(self.conv1(out if self.equalInOut else 
 
 We visualize the feature map of res5b branch2a after ReLU. Second row is the original ResNet50 results.
 Third row illustrates the results with CGD. CGD deactivates neurons corresponding to backgrounds, which reduces the background noise and helps CNN focus more on objects.
+
+### Cite
+```
+@article{CGD,
+  author    = {Xiangyu He and 
+               Ke Cheng and 
+               Qiang Chen and
+               Qinghao Hu and
+               Peisong Wang and
+               Jian Cheng},
+  title     = {Compact Global Descriptor for Neural Networks},
+  journal   = {arXiv},
+  volume    = {abs/1907.09665},
+  year      = {2019},
+  url       = {http://arxiv.org/abs/1907.09665}
+}
+```
