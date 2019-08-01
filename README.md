@@ -10,7 +10,7 @@ and
 ![equation](http://latex.codecogs.com/gif.latex?g) 
 correspond to the global average pooling which maps features across spatial dimensions into a response vector.
 
-<img src="./img/CGD2.png" width="600" height="250" />
+<img src="./img/CGD2.png" width="600" height="210" />
 
 ![equation](http://latex.codecogs.com/gif.latex?\text{CGD}(X)&=X(1+\text{Tanh}(\text{pool}_{ave}(X)\text{pool}_{ave}(X)^Tw))) 
 
