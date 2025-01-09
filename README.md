@@ -1,5 +1,5 @@
 # Compact-Global-Descriptor
-The Pytorch implementation of "Compact Global Descriptor for Neural Networks" (CGD). [arXiv](https://arxiv.org/abs/1907.09665)
+The Pytorch implementation of "Compact Global Descriptor for Neural Networks" (CGD). [arXiv](https://arxiv.org/pdf/1907.09665v3)
 
 ### Toy illustration :
 <img src="./img/CGD.png" width="640" height="300" />
